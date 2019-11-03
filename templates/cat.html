@@ -1,0 +1,41 @@
+{% extends 'home.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+
+
+{% block cat %}
+   <h3>Category: {{ cats.name }}</h3>
+{% endblock cat %}
+
+
+{% block posts %}
+    
+    
+    {% if posts %}
+
+    {% for post in posts  %}
+    <div class="middleForm">
+        <div class="postContentHeadText1">
+            <a style="color: black;" href="{{ post.get_absolute_url }}">{{ post.title|title }}:</a>
+            
+        </div>
+        <small class="text-muted"><i> 
+                Posted By {{ post.author }} on  {{ post.post_published_date }} 
+        </i></small>
+        <div class="postContentText1">
+            {{ post.content_1|truncatewords:24 }}
+        </div>
+        <a href="{{ post.get_absolute_url }}"><button id="btn" class="btn btn-sm btn-success">Read More>></button></a>
+                                  
+        </div>
+    
+    {% endfor %}
+        
+    {% else %}
+    <br> <br>
+        <h4 class="text-center" >No Posts Found!</h4>
+    {% endif %}
+        
+        
+{% endblock posts %}
+    

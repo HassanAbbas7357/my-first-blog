@@ -1,0 +1,81 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/sug1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sug2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suggested Books</title>
+    <!--navbar-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    
+  <div>  <!--navbar-->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light ">
+        
+        <div class="logo" style="margin-left: -35px;">
+            
+                <a href="/"><img src="{% static 'images/brand.png' %}" alt="Navbar"></a>
+            </div>
+            
+            
+           
+                <div  class="  text-uppercase font-weight-bold" id="navbarTogglerDemo02">
+                    <div class="text-left" style="font-size: 16px;">
+                    <div class="text-right">
+                        <ul  class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                                
+                        
+                    </ul> </div>
+                    </div>
+                  </div>
+            
+          </nav>
+</div>
+                <!--end of navbar-->
+<!-- suggested books -->
+    <section class="suggested-books" style="background: url('{{ manage.book_background_image.url }}') center no-repeat /cover;">
+            <div class="container-fluid">
+              <!-- title -->
+              <div class="row">
+                <div class="col text-center py-5">
+                  <h1 class="text-secondary text-uppercase font-italic common-title text-light">Suggested Books</h1>
+                </div>
+              </div>
+              <!-- end of title -->
+              <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-10 mx-auto books">
+                  <a href="#"><img src="{{ manage.book1_image.url }}" class="img-fluid book book-1"></a>
+                  <a href="#"><img src="{{ manage.book2_image.url }}" class="img-fluid book book-2"></a>
+                  <a href="#"><img src="{{ manage.book3_image.url }}" class="img-fluid book book-3"></a>
+                  <a href="#"><img src="{{ manage.book4_image.url }}" class="img-fluid book book-4"></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end of suggested books -->
+         
+      <!-- footer -->
+      <footer class="bg-secondary">
+          <div class="container">
+              <div class="row">
+                  <div class="col text-center">
+                      <img src="{% static 'images/brand-white.png' %}" class="img-fluid" style="margin-top: 3%;max-width: 30%;" alt="">
+                      <h3 style="margin-top: 2%;font-size: 130%;" class="text-light font-weight-light font-italic mb-3">Shows The World Inside you</h3>
+                      
+                      <p class="text-light py-4 m-0">Create , Design and Published by Hassan Abbas</p>
+                  </div>
+              </div>
+          </div>
+       </footer>
+       <!-- end of footer -->
