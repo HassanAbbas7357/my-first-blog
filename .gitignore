@@ -3,5 +3,4 @@
 __pycache__
 mydjangoenv
 db.sqlite3
-/static
 .DS_Store

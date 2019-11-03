@@ -1,0 +1,39 @@
+#login{
+    
+    height: auto;
+    width: 90%;
+    margin-top: 6%;
+    margin-left: 3%;
+    
+
+}
+#login h1{
+    font-size: 300%;
+    padding-top: 14%;
+}
+#form{
+    padding-top: 4%;
+}
+
+#user{
+    border-radius: 15px;
+    margin-left: 22%;
+    width: 60%;
+    margin-top: 5%;
+}
+#pass{
+    border-radius: 15px;
+    margin-left: 22%;
+    width: 60%;
+    margin-top: 5%;
+    
+}
+#btn{
+    margin-left: 44%;
+    width: 20%;
+    border-radius: 15px;
+    
+}
+.foot{
+    
+}

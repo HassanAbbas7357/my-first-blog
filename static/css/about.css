@@ -1,0 +1,31 @@
+header{
+    height: 60vh;     
+}
+
+
+
+#nav{
+    background-color: rgb(105, 105, 105);
+    height: 62px;
+}
+
+
+
+
+
+
+
+.logo img{
+    opacity: inherit;
+    float: left;
+    width: 135px;
+    height: 45px;
+    line-height: 70px;
+    margin-top: -2.5px;
+    margin-left: 80px;
+}
+#menu{
+    font-family: "Century Gothic";
+    float: right;
+    
+}

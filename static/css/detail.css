@@ -1,0 +1,76 @@
+header{
+    height: 60vh;     
+}
+
+.banner{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 80%;
+}
+
+.banner-heading{
+    animation-name: anim;
+    animation-duration: 2s;
+}
+.banner-par {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#comment-heading{
+    margin-top: 5%;
+
+}
+.comment{
+    margin-top: 40px;
+    border: grey thin;
+    height: auto;
+    max-width: 1050px;
+}
+.comment img {
+    padding-left: 2%;
+    height: 30px;
+    max-width: 17%;
+}
+
+.w-comment {
+    padding-left: 3%;
+    padding-top: 16%;
+}
+.r-comment{
+    padding-top: 2%;
+}
+#name{
+    font-size: 130%;
+    padding-left: 12%;
+    margin-top: -32px;
+}
+#aname{
+    font-size: 130%;
+    padding-left: 13.9%;
+    margin-top: -32px;
+}
+#cmnt-txt{
+    font-size: 90%;
+    margin-top: -15px;
+    width: 80%;
+    padding-left: 9%;
+}
+.time {
+    font-size: 60%;
+    padding-left: 9%;
+}

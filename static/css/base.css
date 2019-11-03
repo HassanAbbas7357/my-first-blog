@@ -1,0 +1,132 @@
+header{
+    height: 60vh;     
+}
+
+.banner{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 80%;
+}
+
+.banner-heading{
+    animation-name: anim;
+    animation-duration: 2s;
+}
+.banner-par {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+#nav{
+    background-color: rgb(105, 105, 105);
+    height: 62px;
+}
+
+
+
+
+
+
+
+.logo img{
+    opacity: inherit;
+    float: left;
+    width: 135px;
+    height: 45px;
+    line-height: 70px;
+    margin-top: -2.5px;
+    margin-left: 80px;
+}
+#menu{
+    font-family: "Century Gothic";
+    float: right;
+    
+}
+#btn-login{
+    border-radius: 15px;
+}
+.ul :hover{
+    background-color:rgb(105, 105, 105) ;
+    opacity: .8;
+    width: 20%;
+
+}
+#drop {
+    background-color:rgb(105, 105, 105) ;
+    opacity: .8;
+    width: 11%;
+
+}
+
+.middleForm .postContentHeadText1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 180%;
+}
+.middleForm .postContentText1{
+    
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+#btn{
+    margin-top: 12px;
+}
+
+.middleForm .postContentHeadText2{
+    padding-top: 120px;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+.middleForm .postContentText2{
+    
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.middleForm .postContentHeadText3{
+    padding-top: 120px;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+.middleForm .postContentText3{
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.img1{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.middleForm .postContentEndingText{
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
